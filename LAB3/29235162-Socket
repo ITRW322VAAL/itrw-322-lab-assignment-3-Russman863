@@ -1,0 +1,5 @@
+$ git status
+$ mkdir 29235162_Sockets
+$ cd 29235162_Sockets
+$ touch Server.py Client.py
+$ git status
