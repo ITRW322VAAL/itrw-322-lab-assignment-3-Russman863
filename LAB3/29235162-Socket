@@ -3,3 +3,15 @@ $ mkdir 29235162_Sockets
 $ cd 29235162_Sockets
 $ touch Server.py Client.py
 $ git status
+
+import Client.py
+
+host = '12.0.0.0.1'
+port = 9999
+with Client.py.socket(Client.py.AF_INET, Client.py.SOCK_STREAM) as s:
+  s.connect((host,port))
+  s.sendall(b'Hello, Server')
+  data = s.recv(1024
+  
+  print('Receive',repr(data))
+  
