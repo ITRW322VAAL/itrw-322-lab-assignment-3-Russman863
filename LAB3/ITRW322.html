@@ -28,3 +28,20 @@ def socket_create():
        global s
        host = ''
        port = 9999
+
+import Server.py
+
+host = '12.0.0.1'
+port = 9999
+
+with Server.py.soket(Server.py.AF_INET, Server.py.SOCK-STREAM) as s:
+s.bind((host, port))
+s.listen()
+conn, addr - s.accept()
+with conn:
+ print('Server is connected withh address' addr)
+  while true:  
+        data = conn.recv(2048)
+        if not data:
+               break
+         conn.sendal(data)
